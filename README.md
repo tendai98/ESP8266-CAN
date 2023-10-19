@@ -1,5 +1,3 @@
-Certainly! Here's a README for your project that involves hacking the CAN bus using an ESP8266 NodeMCU controller and an MCP2515 CAN Controller module, along with Python scripts for Linux PCs and mobile devices:
-
 # CAN Bus Hacking with ESP8266 and MCP2515
 
 ![CAN Bus Hacking](screenshots/1.jpg)
@@ -52,10 +50,12 @@ Python scripts are available for both Linux PCs and mobile devices. These script
 
 3. Configure the script to connect to the ESP8266 NodeMCU via Wi-Fi.
 
-4. Start sending and receiving CAN messages. Use this project responsibly and respect the security and privacy of the systems you interact with.
+4. Start receiving CAN messages.
+
+5. You can modify the project to send CAN messages (I couldnt do sufficent testing on that because the car wasnt mine, So yeah)
 
 ## License
 
 This project is open-source and released under the [MIT License](LICENSE). You are welcome to modify, contribute, or use it for educational and non-malicious purposes.
 
-**Note**: Hacking into CAN bus systems without proper authorization may be illegal and unethical. Always ensure you have the right to access and modify these systems and adhere to legal and ethical guidelines when working with them.
+**Note**: Hacking into CAN bus systems without proper authorization may be illegal and unethical.
