@@ -44,17 +44,6 @@ The provided Arduino code allows you to initialize and configure the CAN Control
 
 Python scripts are available for both Linux PCs and mobile devices. These scripts establish a connection with the ESP8266 NodeMCU and enable you to send and receive CAN messages. They are designed to be user-friendly and accessible.
 
-## Usage
-
-1. Upload the Arduino code to the ESP8266 NodeMCU using the Arduino IDE.
-
-2. Run the Python script on your PC or mobile device.
-
-3. Configure the script to connect to the ESP8266 NodeMCU via Wi-Fi.
-
-4. Start receiving CAN messages.
-
-5. Still working on sending CAN messages
 
 ## License
 
