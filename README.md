@@ -1,12 +1,14 @@
 # CAN Bus Hacking with ESP8266 and MCP2515
 
-![CAN Bus Hacking](screenshots/1.jpg)
-
 ## Overview
 
 This project explores the world of Controller Area Network (CAN) bus hacking, using an ESP8266 NodeMCU controller and an MCP2515 CAN Controller module. The CAN bus is commonly found in automotive and industrial systems, and understanding how to interface with it is essential for various applications, from diagnostics to customizations.
 
 This project provides an introduction to the hardware and software required for CAN bus hacking, along with sample code and scripts for communication with the CAN bus.
+
+# Screenshots
+
+I did save some screenshots while running the python scripts on my phone in Termux. You can find them in `screenshots` folder
 
 ## Hardware Components
 
