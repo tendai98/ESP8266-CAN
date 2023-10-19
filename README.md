@@ -1,8 +1,8 @@
 Certainly! Here's a README for your project that involves hacking the CAN bus using an ESP8266 NodeMCU controller and an MCP2515 CAN Controller module, along with Python scripts for Linux PCs and mobile devices:
 
-# CAN Bus Hacking Project
+# CAN Bus Hacking with ESP8266 and MCP2515
 
-![CAN Bus Hacking](can_bus_hacking.jpg)
+![CAN Bus Hacking](screenshots/1.jpg)
 
 ## Overview
 
