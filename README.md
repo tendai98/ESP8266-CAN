@@ -54,7 +54,7 @@ Python scripts are available for both Linux PCs and mobile devices. These script
 
 4. Start receiving CAN messages.
 
-5. You can modify the project to send CAN messages (I couldnt do sufficent testing on that because the car wasnt mine, So yeah)
+5. Still working on sending CAN messages
 
 ## License
 
