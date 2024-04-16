@@ -1,3 +1,3 @@
-#define AP_SSID "iCAN-1"
-#define AP_PASS "canbus1234"
+char AP_SSID[8]  = "iCAN-1";
+char AP_PASS[12]  = "canbus1234";
 #define MAX_CAN_DATA_LEN 8

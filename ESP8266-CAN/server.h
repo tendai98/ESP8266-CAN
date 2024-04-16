@@ -1,6 +1,6 @@
 #include <ESP8266WebServer.h>
 #include "can.h"
-#include "base64.hpp"
+#include "base64.h"
 
 #define HTTP_OK 200
 #define HTTP_NOT_FOUND 404
@@ -35,11 +35,12 @@ void canHardwareMode(){
 }
 
 void canWrite(){
+  
   if(configured){
     len = server.arg(0).toInt();
     server.arg(1).toCharArray(ingressBuffer, len);
-    uint8_t frameData[BASE64::decodeLength(ingressBuffer)];
-    BASE64::decode(ingressBuffer, frameData);
+    uint8_t frameData[decodeLength(ingressBuffer)];
+    decode(ingressBuffer, frameData);
     
     canSend(frameData);
     server.send(HTTP_OK, MIME_TYPE, "CAN FRAME SENT"); 
@@ -51,8 +52,8 @@ void canWrite(){
 void canRead(){
   if(configured){
     if(canRecv()){
-      char b64[BASE64::encodeLength(MAX_FRAME_LEN)];
-      BASE64::encode((const uint8_t*) &canMsg, MAX_FRAME_LEN, b64);
+      char b64[encodeLength(MAX_FRAME_LEN)];
+      encode((const uint8_t*) &canMsg, MAX_FRAME_LEN, b64);
       server.send(HTTP_OK, MIME_TYPE, b64);
     }else{
       server.send(HTTP_OK, MIME_TYPE, "NO CAN DATA");         
