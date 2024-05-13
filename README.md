@@ -34,13 +34,20 @@ This project includes Python scripts for both Linux PCs and mobile devices. Thes
 
 ## Pinout
 
-ESP8266(NodeMCU)        MCP2515 CAN Module
+`ESP8266(NodeMCU)        MCP2515 CAN Module`
+
       D2          ->      INT
+      
       D5          ->      SCK
+      
       D7          ->      SI (MOSI)
+      
       D6          ->      SO (MISO)
+      
       D8          ->      CS
+      
       GND         ->      GND
+      
       Vin         ->      VCC
 
 1. Connect the MCP2515 CAN Controller module to the ESP8266 NodeMCU. Make sure to connect the required pins, including the Chip Select (CS) pin.
