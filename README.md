@@ -32,9 +32,21 @@ This project includes Python scripts for both Linux PCs and mobile devices. Thes
 
 ## Setting up the Hardware
 
+## Pinout
+
+ESP8266(NodeMCU)        MCP2515 CAN Module
+      D2          ->      INT
+      D5          ->      SCK
+      D7          ->      SI (MOSI)
+      D6          ->      SO (MISO)
+      D8          ->      CS
+      GND         ->      GND
+      Vin         ->      VCC
+
 1. Connect the MCP2515 CAN Controller module to the ESP8266 NodeMCU. Make sure to connect the required pins, including the Chip Select (CS) pin.
 
 2. Power the MCP2515 module and ESP8266 NodeMCU.
+
 
 ## Arduino Code
 
@@ -43,6 +55,7 @@ The provided Arduino code allows you to initialize and configure the CAN Control
 ## Python Scripts
 
 Python scripts are available for both Linux PCs and mobile devices. These scripts establish a connection with the ESP8266 NodeMCU and enable you to send and receive CAN messages. They are designed to be user-friendly and accessible.
+
 
 
 ## License
