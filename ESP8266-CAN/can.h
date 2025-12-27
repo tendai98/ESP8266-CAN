@@ -26,14 +26,24 @@ void canSend(uint8_t * data) {
     canMsg.can_id = *((canid_t *) data);
     canMsg.can_dlc = CAN_MAX_DLC;
 
-    canMsg.data[0] = *((char*) data+0x5);
-    canMsg.data[1] = *((char*) data+0x6);
-    canMsg.data[2] = *((char*) data+0x7);
-    canMsg.data[3] = *((char*) data+0x8);
-    canMsg.data[4] = *((char*) data+0x9);
-    canMsg.data[5] = *((char*) data+0xA);
-    canMsg.data[6] = *((char*) data+0xB);
-    canMsg.data[7] = *((char*) data+0xC);
+    //canMsg.data[0] = *((char*) data+0x5);
+    //canMsg.data[1] = *((char*) data+0x6);
+    //canMsg.data[2] = *((char*) data+0x7);
+    //canMsg.data[3] = *((char*) data+0x8);
+    //canMsg.data[4] = *((char*) data+0x9);
+    //canMsg.data[5] = *((char*) data+0xA);
+    //canMsg.data[6] = *((char*) data+0xB);
+    //canMsg.data[7] = *((char*) data+0xC);
+
+    // Shifted the address deferencing to start 3 bytes ahead
+    canMsg.data[0] = *((char*) data+0x08);
+    canMsg.data[1] = *((char*) data+0x09);
+    canMsg.data[2] = *((char*) data+0x0A);
+    canMsg.data[3] = *((char*) data+0x0B);
+    canMsg.data[4] = *((char*) data+0x0C);
+    canMsg.data[5] = *((char*) data+0x0D);
+    canMsg.data[6] = *((char*) data+0x0E);
+    canMsg.data[7] = *((char*) data+0x0F);
 
     canDevice.sendMessage(&canMsg);
 }
